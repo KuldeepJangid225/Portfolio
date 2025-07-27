@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kuldeep Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+
+  <header>
+    <nav>
+  <div class="brand">Kuldeep Portfolio</div>
+  <div class="menu-toggle" aria-label="Toggle menu" role="button" tabindex="0">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+  </header>
+
+  <main>
+    <section class="firstSection" id="home">
+      <div class="leftSection">
+        Hi, my name is <span class="purple">Kuldeep Jangid</span><br />
+        and I am a passionate<br />
+        <span id="element"></span>
+      </div>
+      <div class="rightSection">
+        <div class="profile-container">
+          <img src="photos/WhatsApp Image 2025-07-14 at 5.11.08 PM.jpeg" alt="Kuldeep Profile">
+        </div>
+      </div>
+    </section>
+
+    <hr>
+
+    <section class="secondSection">
+      <h1>Experience</h1>
+      <p class="grey">Fresher</p>
+    </section>
+    <hr>
+  <section class="skillsSection" id="skills">
+  <h1 class="skillsTitle">Skills</h1>
+  <div class="skills-grid">
+    <div class="skill"><i class="fa-brands fa-java"></i><span>Core Java</span></div>
+    <div class="skill"><i class="fa-brands fa-java"></i><span>Advanced Java</span></div>
+    <div class="skill"><i class="fa-solid fa-database"></i><span>MySQL</span></div>
+    <div class="skill"><i class="fa-brands fa-html5"></i><span>HTML</span></div>
+    <div class="skill"><i class="fa-brands fa-css3-alt"></i><span>CSS</span></div>
+    <div class="skill"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
+    <div class="skill"><i class="fa-solid fa-database"></i><span>Database</span></div>
+    <div class="skill"><i class="fa-solid fa-code-branch"></i><span>Collection Framework</span></div>
+  </div>
+</section>
+<hr>
+
+<section class="aboutSection"  id="about">
+  <h1>About Me</h1>
+  <p>
+    Hello! I'm <span class="highlight">Kuldeep Jangid</span>, a passionate and dedicated software developer currently in my final year of Bachelor of Computer Applications (BCA). I have a strong interest in creating efficient, scalable, and user-friendly web and software solutions.
+  </p>
+  <p>
+    As a fresher, I bring a fresh perspective, curiosity, and a strong eagerness to learn and grow in the tech industry. My core skills include Core Java, Advanced Java, MySQL, HTML, CSS, JavaScript, and the Collection Framework.
+  </p>
+  <p>
+    I'm actively looking for opportunities where I can contribute to real-world projects, collaborate with experienced developers, and continuously build my skills in full-stack development.
+  </p>
+</section>
+<hr>
+
+<section class="projectsSection" id="projects">
+  <h1 class="section-title">Projects</h1>
+
+  <!-- Project 1 -->
+  <div class="project">
+    <h2 class="project-title">🛒 Online E-commerce Website</h2>
+    <p>
+      Designed and developed a fully functional e-commerce website that allows users to browse products, add items to a cart, and complete a purchase process. The platform features a responsive user interface, category-based filtering, and integrated shopping cart functionality.
+    </p>
+    <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript, MySQL</p>
+    <ul>
+      <li>Product listing with search and category filter</li>
+      <li>Cart system with add/remove/update capabilities</li>
+      <li>User registration and login functionality</li>
+      <li>Order checkout flow with data stored in MySQL</li>
+    </ul>
+  </div>
+
+  <!-- Project 2 -->
+  <div class="project">
+    <h2 class="project-title">🔐 Login System (Java + Database)</h2>
+    <p>
+      Developed a secure login and registration system using Java, Advanced Java (Servlets), and JDBC. Integrated it with a frontend interface to handle user input and authentication with backend validation.
+    </p>
+    <p><strong>Tech Stack:</strong> Core Java, Advanced Java, JDBC, MySQL, HTML, CSS, JavaScript</p>
+    <ul>
+      <li>Registration and login forms with frontend validation</li>
+      <li>Secure credential verification via JDBC</li>
+      <li>Database management using MySQL</li>
+      <li>Servlet-based request handling and error messaging</li>
+    </ul>
+  </div>
+</section>
+<hr>
+<section class="contactSection" id="contact">
+  <h1>Contact Me</h1>
+  <form id="contactForm" action="https://formspree.io/f/xjkovvke" method="POST">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required placeholder="Your Name">
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="_replyto" required placeholder="Your Email">
+
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone" placeholder="Your Phone Number">
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5" required placeholder="Your Message"></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+
+  </main>
+  <footer class="footer">
+  <div class="footer-content">
+    <h2>Kuldeep Jangid</h2>
+    <div class="social-links">
+      <a href="https://www.youtube.com/@yourchannel" target="_blank" title="YouTube">
+        <i class="fa-brands fa-youtube"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/kuldeep-jangid-jaipur/" target="_blank" title="LinkedIn">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+      <a href="mailto:kj623178@gmail.com" title="Gmail">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+      <a href="tel:+916376778170" title="Phone">
+        <i class="fa-solid fa-phone"></i>
+      </a>
+    </div>
+    <p>&copy; 2025 Kuldeep Jangid. All rights reserved.</p>
+  </div>
+</footer>
+
+
+  <!-- Typed JS effect -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Software Developer', 'Web Developer', 'Full Stack Developer'],
+      typeSpeed: 60,
+      backSpeed: 30,
+      loop: true
+    });
+     const form = document.getElementById('contactForm');
+  form.addEventListener('submit', async function (e) {
+    e.preventDefault();
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+      if (response.ok) {
+        alert('Thank you for contacting me! I will get back to you soon.');
+        form.reset();
+      } else {
+        alert('Oops! There was a problem submitting your form.');
+      }
+    } catch (error) {
+      alert('Oops! There was a problem submitting your form.');
+    }
+  });
+  const menuToggle = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('nav ul');
+
+menuToggle.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});
+
+  </script>
+
+</body>
+</html>
